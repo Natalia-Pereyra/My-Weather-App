@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/677a21b512.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>
+                Buenos Aires
+            </h1>
+            <h3>
+                Sunday 14th of July
+            </h3>
+            <form id="search-form">
+                <input type="text" placeholder="Search for a city" autocomplete="off" autofocus="on"
+                    id="search-text-input" />
+                <input type="submit" value="Search" />
+            </form>
+        </div>
+        <button>My current Location</button>
+
+        <div class="description">
+            <p>
+                Humidity: 90%
+                <br />
+                Wind:20 Km/h
+            </p>
+        </div>
+        <div class="temperature">
+            <h1 class="data">
+                <span id="number">19</span>
+                <span>
+                    <a href="#" id="celsius-link">°C ⎜</a>
+                    <a href="#" id="fahrenheit-link">F</a>
+                </span>
+            </h1>
+            <h2 class="condition">
+                Sunny
+            </h2>
+            <div class="sun">
+                <i class="far fa-sun"></i>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-2">
+                <h5> MON </h5>
+                <i class="fas fa-smog"></i>
+                <span> 10°C</span>
+            </div>
+            <div class="col-2">
+                <h5> TUE </h5>
+                <i class="fas fa-cloud"></i>
+                <span> 11°C</span>
+            </div>
+            <div class="col-2">
+                <h5> WED </h5>
+                <i class="fas fa-wind"></i>
+                <span>9°C</span>
+            </div>
+            <div class="col-2">
+                <h5> THU </h5>
+                <i class="fas fa-umbrella"></i>
+                <span>8°C</span>
+            </div>
+            <div class="col-2">
+                <h5> FRI </h5>
+                <i class="fas fa-cloud-sun-rain"></i>
+                <span>10°C</span>
+            </div>
+            <div class="col-2">
+                <h5> SAT </h5>
+                <i class="fas fa-sun"></i>
+                <span> 12°C</span>
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+    <script src="src/index.js"></script>
+</body>
+
+</html>
