@@ -141,3 +141,17 @@ button {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+#my-name {
+  color: #ffa826;
+  font-style: italic;
+}
+#my-link {
+  color: #5a6276;
+  font-style: bold;
+}
+#bottom-container {
+  display: block;
+  margin-top: -100px;
+  padding: 10px;
+  margin-right: -200px;
+}
