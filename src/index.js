@@ -14,7 +14,7 @@ let days = [
 ];
 let day = days[now.getDay()];
 let h3 = document.querySelector("h3");
-h3.innerHTML = `${day}  ${hour}:${minutes}`;
+h3.innerHTML = `${day},  ${hour}:${minutes}`;
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", search);

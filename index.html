@@ -10,6 +10,7 @@
     <script src="https://kit.fontawesome.com/677a21b512.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
  <link rel="stylesheet" href="src/style.css">
+ 
 </head>
 
 <body>
@@ -24,33 +25,39 @@
             <form id="search-form">
                 <input type="text" placeholder="Search for a city" autocomplete="off" autofocus="on"
                     id="search-text-input" />
-                <input type="submit" value="Search" />
+                <input id="search-button" type="submit" value="Search" />
             </form>
         </div>
         <button>My current Location</button>
+        <br></br>
+        <br></br>
+        <br></br>
 
-        <div class="description">
-            <p>
-                Humidity: 90%
-                <br />
-                Wind:20 Km/h
-            </p>
-        </div>
-        <div class="temperature">
-            <h1 class="data">
-                <span id="number">19</span>
-                <span>
-                    <a href="#" id="celsius-link">°C ⎜</a>
-                    <a href="#" id="fahrenheit-link">F</a>
-                </span>
-            </h1>
-            <h2 class="condition">
-                Sunny
-            </h2>
-            <div class="sun">
-                <i class="far fa-sun"></i>
+
+        <div class="row">
+
+        <div class="col-6">
+            <i class="far fa-sun"></i>12 °C ⎢ F 
             </div>
+        <div class="col-6">
+            <ul>
+                <li>
+                    Precipitacion: 0%
+                </li>
+                <li>
+                    Humidity: 90%
+                </li>
+                <li>
+                    Wind: 20 Km/h 
+                </li>
+            </ul>
         </div>
+        </div>
+
+
+        <br></br>
+        <br></br>
+        <br></br>
 
 
         <div class="row">
@@ -86,15 +93,15 @@
 
             </div>
         </div>
+  
+  
     </div>
 
-    </div>
-    <div id="bottom-container"></div>
-   <p id="my-name">
+     <small id="my-name">
         <a id="my-link" href="https://github.com/Natalia-Pereyra/My-Weather-App">Open-source Code</a>
         by Natalia Pereyra
-    </p>
-    </div>
+   </small>
+  
     
 
 

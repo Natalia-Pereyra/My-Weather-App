@@ -1,9 +1,15 @@
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 ul li {
   list-style: none;
   text-align: center;
+  color: #a9b2a9;
 }
 h3 {
-  color: #ffa826;
+  color: #ffbe5c;
 }
 
 .header {
@@ -11,7 +17,7 @@ h3 {
   text-align: center;
   margin-top: 0px;
   padding-bottom: 10px;
-  color: white;
+  color: #ffbe5c;
 }
 
 .description {
@@ -25,7 +31,7 @@ h3 {
 }
 #number {
   font-size: 90px;
-  color: white;
+  color: #d1d7d1;
   padding-right: 0px;
   margin-right: 500px;
   padding-top: 500px;
@@ -40,54 +46,54 @@ p {
   position: relative;
   left: 100px;
   top: 120px;
-  color: white;
+  color: #d1d7d1;
 }
 .container {
   display: block;
   margin: 0 auto;
   padding: 30px;
-  border: 3px solid #5a6276;
+  border: 3px solid #d1d7d1;
   border-radius: 50px;
-  background-color: #5a6276;
   max-width: 500px;
   margin-top: 10px;
+  background-image: url(file:///Users/nataliapereyra/Desktop/backgroundimage.png);
 }
 .row {
   box-sizing: border-box;
   margin-top: -100px;
 }
 .fas.fa-smog {
-  color: #ffa826;
+  color: #ffbe5c;
   font-size: 20px;
   margin-left: 10px;
   margin-top: 10px;
 }
 .fas.fa-cloud {
-  color: #ffa826;
+  color: #ffbe5c;
   font-size: 20px;
   margin-left: 10px;
   margin-top: 10px;
 }
 .fas.fa-wind {
-  color: #ffa826;
+  color: #ffbe5c;
   font-size: 20px;
   margin-left: 10px;
   margin-top: 10px;
 }
 .fas.fa-umbrella {
-  color: #ffa826;
+  color: #ffbe5c;
   font-size: 20px;
   margin-left: 10px;
   margin-top: 10px;
 }
 .fas.fa-cloud-sun-rain {
-  color: #ffa826;
+  color: #ffbe5c;
   font-size: 20px;
   margin-left: 10px;
   margin-top: 10px;
 }
 .fas.fa-sun {
-  color: #ffa826;
+  color: #ffbe5c;
   font-size: 20px;
   margin-left: 10px;
   margin-top: 10px;
@@ -111,7 +117,7 @@ span {
   position: relative;
   left: -50px;
   top: -100px;
-  color: white;
+  color: #d1d1d1;
   text-decoration: none;
 }
 #fahrenheit-link {
@@ -119,7 +125,7 @@ span {
   position: relative;
   left: -50px;
   top: -100px;
-  color: white;
+  color: #d1d1d1;
   text-decoration: none;
 }
 a {
@@ -129,7 +135,7 @@ a {
   margin-top: -50px;
 }
 button {
-  background-color: #ffa826; /* Green */
+  background-color: #ffbe5c;
   border: none;
   color: white;
   padding: 10px 45px;
@@ -144,6 +150,7 @@ button {
 #my-name {
   color: #ffa826;
   font-style: italic;
+  margin: 0 auto;
 }
 #my-link {
   color: #5a6276;
@@ -154,4 +161,10 @@ button {
   margin-top: -100px;
   padding: 10px;
   margin-right: -200px;
+}
+h5 {
+  color: #708372;
+}
+#search-button {
+  background-color: #d1d1d1;
 }
