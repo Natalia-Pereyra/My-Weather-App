@@ -1,18 +1,20 @@
 ul {
   margin: 0;
   padding: 0;
+  margin-top: 20px;
 }
 
 ul li {
   list-style: none;
   text-align: center;
   color: #a9b2a9;
+  font-size: 14px;
 }
 h3 {
   color: #ffbe5c;
 }
 h5 {
-  color: #708372;
+  color: #a9b2a9;
 }
 
 button {
@@ -27,10 +29,6 @@ button {
   font-size: 16px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-.weather-icon strong {
-  font-size: 70px;
-  color: #a9b2a9;
 }
 span {
   color: #718373;
@@ -90,10 +88,28 @@ span {
 }
 
 .fas.fa-sun {
-  color: #ffa826;
-  font-size: 70px;
+  color: #ffbe5c;
+  font-size: 60px;
+  margin-left: -10;
+  margin-right: 15px;
 }
 
+.weather-app-wrapper {
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.temperature .units {
+  color: #ffbe5c;
+  font-size: 16px;
+  position: relative;
+  top: -32px;
+}
+.temperature strong {
+  font-size: 65px;
+  color: #a9b2a9;
+  font-weight: normal;
+}
 #my-name {
   color: #ffa826;
   font-style: italic;
@@ -103,11 +119,8 @@ span {
   color: #5a6276;
   font-style: bold;
 }
-
-.weather-app-wrapper {
-  max-width: 500px;
-  margin: 20px auto;
-}
-.weather-icon i {
-  margin-right: 100px;
+.fahrenheit-link {
+  color: #ffbe5c;
+  text-decoration: none;
+  font-weight: bolder;
 }
