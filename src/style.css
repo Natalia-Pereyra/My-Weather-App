@@ -11,6 +11,30 @@ ul li {
 h3 {
   color: #ffbe5c;
 }
+h5 {
+  color: #708372;
+}
+
+button {
+  background-color: #ffbe5c;
+  border: none;
+  color: white;
+  padding: 10px 45px;
+  margin-left: 95px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.weather-icon strong {
+  font-size: 70px;
+  color: #a9b2a9;
+}
+span {
+  color: #718373;
+}
 
 .header {
   display: block;
@@ -20,34 +44,6 @@ h3 {
   color: #ffbe5c;
 }
 
-.description {
-  text-align: center;
-  position: relative;
-  left: 10px;
-}
-.temperature {
-  text-align: center;
-  margin-left: 20px;
-}
-#number {
-  font-size: 90px;
-  color: #d1d7d1;
-  padding-right: 0px;
-  margin-right: 500px;
-  padding-top: 500px;
-}
-.condition {
-  position: relative;
-  right: 160px;
-  top: -50px;
-  color: #ffa826;
-}
-p {
-  position: relative;
-  left: 100px;
-  top: 120px;
-  color: #d1d7d1;
-}
 .container {
   display: block;
   margin: 0 auto;
@@ -92,61 +88,12 @@ p {
   margin-left: 10px;
   margin-top: 10px;
 }
-.fas.fa-sun {
-  color: #ffbe5c;
-  font-size: 20px;
-  margin-left: 10px;
-  margin-top: 10px;
-}
 
-.sun {
+.fas.fa-sun {
   color: #ffa826;
   font-size: 70px;
-  position: relative;
-  left: 100px;
-  bottom: 200px;
 }
-span {
-  position: relative;
-  top: 15px;
-  left: 5px;
-  color: white;
-}
-#celsius-link {
-  font-size: 25px;
-  position: relative;
-  left: -50px;
-  top: -100px;
-  color: #d1d1d1;
-  text-decoration: none;
-}
-#fahrenheit-link {
-  font-size: 25px;
-  position: relative;
-  left: -50px;
-  top: -100px;
-  color: #d1d1d1;
-  text-decoration: none;
-}
-a {
-  z-index: 1;
-}
-.data {
-  margin-top: -50px;
-}
-button {
-  background-color: #ffbe5c;
-  border: none;
-  color: white;
-  padding: 10px 45px;
-  margin-left: 95px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
+
 #my-name {
   color: #ffa826;
   font-style: italic;
@@ -156,15 +103,11 @@ button {
   color: #5a6276;
   font-style: bold;
 }
-#bottom-container {
-  display: block;
-  margin-top: -100px;
-  padding: 10px;
-  margin-right: -200px;
+
+.weather-app-wrapper {
+  max-width: 500px;
+  margin: 20px auto;
 }
-h5 {
-  color: #708372;
-}
-#search-button {
-  background-color: #d1d1d1;
+.weather-icon i {
+  margin-right: 100px;
 }
