@@ -17,11 +17,8 @@
     <div class="weather-app-wrapper">
     <div class="container">
         <div class="header">
-            <h1>
-                Buenos Aires
-            </h1>
-            <h3>
-                Sunday 14th of July
+            <h1 id="city"></h1>
+            <h3 id="current-date">
             </h3>
             <form id="search-form">
                 <input type="text" placeholder="Search for a city" autocomplete="off" autofocus="on"
@@ -38,9 +35,12 @@
         <div class="row">
         <div class="col-6">
             <div class="d-flex align-items-center">
-            <i class="fas fa-sun" class="float-left"></i>
+            <img src="" 
+            alt="Clear"
+            id="Icon"
+            class="float-left"/>
             <div class="temperature"> 
-                <strong>12</strong>
+                <strong id="temperature"></strong>
                 <span class="units">
                  °C ⎢<a href="#" class="fahrenheit-link">F</a>
                 </span>
@@ -50,19 +50,17 @@
         <div class="col-6">
             <ul>
                 <li>
-                    Precipitacion: 0%
-                </li>
+                    Humidity: <span id="humidity"></span>%</li>
                 <li>
-                    Humidity: 90%
-                </li>
-                <li>
-                    Wind: 20 Km/h 
-                </li>
+                    Wind: <span id="wind-speed"></span>Km/h</li>
             </ul>
         </div>
         </div>
+        <small id="description-weather">
+            Sunny
+        </small>
 
-
+        <br></br>
         <br></br>
         <br></br>
         <br></br>

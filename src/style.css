@@ -33,7 +33,9 @@ button {
 span {
   color: #718373;
 }
-
+li::first-letter {
+  text-transform: capitalize;
+}
 .header {
   display: block;
   text-align: center;
@@ -124,3 +126,10 @@ span {
   text-decoration: none;
   font-weight: bolder;
 }
+#description-weather {
+  color: #ffbe5c;
+  font-size: 18px;
+  position: relative;
+  top: -10px;
+  left: 5px;
+  text-transform: capitalize;
