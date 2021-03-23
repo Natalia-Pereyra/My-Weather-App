@@ -1,14 +1,5 @@
 function formatDate(timestamp) {
 let date = new Date(timestamp);
-let hour = date.getHours();
-if (hour < 10) {
-  hour = `0${hour}`;
-}
-let minutes = date.getMinutes();
-if (minutes < 10) {
-  minutes = `0${minutes}`;
-}
-}
 
 let days = [
   "Sunday",
@@ -19,29 +10,19 @@ let days = [
   "Friday",
   "Saturday"
 ];
+
 let day = days[date.getDay()];
 let dateElement = document.querySelector("#current-date");
 dateElement.innerHTML = `${day},  ${hour}:${minutes}`;
 
-let form = document.querySelector("#search-form");
-form.addEventListener("submit", search);
 
-function search(event) {
-  event.preventDefault();
-  let searchInput = document.querySelector("#city");
-  let h1 = document.querySelector("h1");
-  h1.innerHTML = `${searchInput.value}`;
-
-  searchCity(searchInput.value);
+let hour = date.getHours();
+if (hour < 10) {
+  hour = `0${hour}`;
 }
-
-function searchCity(city) {
-  let apiKey = "&appid=396c00224132d4189b94cab19ab901e7";
-  let api = "https://api.openweathermap.org/data/2.5/weather?q=";
-  let units = "&units=metric";
-  let apiUrl = `${api}${city}${apiKey}${units}`;
-
-  axios.get(`${apiUrl}`).then(showTemperature);
+let minutes = date.getMinutes();
+if (minutes < 10) {
+  minutes = `0${minutes}`;
 }
 
 function showTemperature(response) {
@@ -64,18 +45,23 @@ function showTemperature(response) {
 
 }
 
-function showLocation(event) {
-  event.preventDefault();
-  navigator.geolocation.getCurrentPosition(currentLo);
+function search(city) {
+  let apiKey = "&appid=396c00224132d4189b94cab19ab901e7";
+  let api = "https://api.openweathermap.org/data/2.5/weather?q=";
+  let units = "&units=metric";
+  let apiUrl = `${api}${city}${apiKey}${units}`;
+  axios.get(apiUrl).then(showTemperature);
 }
 
-function currentLo(position) {
-  let latitude = position.coords.latitude;
-  let longitude = position.coords.longitude;
-  let apiKey = "396c00224132d4189b94cab19ab901e7";
-  let url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${apiKey}`;
- let city = "Paris";
-  axios.get(url).then(showTemperature);
+function handleSubmit(event) {
+  event.preventDefault();
+  let searchInput = document.querySelector("#search-text-input");
+  search(searchInput.value);
 }
-let currentLocation = document.querySelector("button");
-currentLocation.addEventListener("click", showLocation);
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
+
+
+
+
