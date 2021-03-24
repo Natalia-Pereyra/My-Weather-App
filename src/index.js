@@ -13,22 +13,25 @@ let days = [
 
 let day = days[date.getDay()];
 
-let hour = date.getHours();
-if (hour < 10) {
-  hour = `0${hour}`;
-}
-let minutes = date.getMinutes();
-if (minutes < 10) {
-  minutes = `0${minutes}`;
-}
-
-return `${day},  ${hour}:${minutes}`;
+return `${day},  ${formatHours(timestamp)}`;
 }
 
 let now = new Date();
 let dateElement = document.querySelector("#current-date");
 dateElement.innerHTML = formatDate(now);
 
+function formatHours(timestamp) {
+  let date = new Date(timestamp);
+  let hour = date.getHours();
+if (hour < 10) {
+  hour = `0${hour}`;
+}
+let minutes = date.getMinutes();
+if (minutes < 10) {
+  minutes = `0${minutes}`;
+ }
+return `${hour}:${minutes}`; 
+}
 
 function showTemperature(response) {
   let cityElement = document.querySelector("#city");
@@ -52,13 +55,35 @@ function showTemperature(response) {
 
 }
 
+function displayForecast(response) {
+  let forecastElement = document.querySelector("#all-forecast");
+  let forecast = response.data.list[0];
+
+  forecastElement.innerHTML = `
+      <div class="col-2">
+                <h5>${formatHours(forecast.dt * 1000)}</h5>
+                <img src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" 
+                />
+                <div class="weather-forecast-temperature">
+                <strong>${Math.round(forecast.main.temp_max)}°C </strong>${Math.round(forecast.main.temp_min)}°C
+            </div>
+            </div>
+            `;
+
+}
+
 function search(city) {
   let apiKey = "&appid=396c00224132d4189b94cab19ab901e7";
   let api = "https://api.openweathermap.org/data/2.5/weather?q=";
   let units = "&units=metric";
   let apiUrl = `${api}${city}${apiKey}${units}`;
   axios.get(apiUrl).then(showTemperature);
+
+  apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}${units}`;
+  axios.get(apiUrl).then(displayForecast);
+
 }
+search("New York");
 
 function handleSubmit(event) {
   event.preventDefault();

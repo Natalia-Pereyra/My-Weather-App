@@ -37,6 +37,7 @@ span {
 li::first-letter {
   text-transform: capitalize;
 }
+
 .header {
   display: block;
   text-align: center;
@@ -150,4 +151,12 @@ li::first-letter {
 }
 .temperature .active:hover {
   text-decoration: none;
+}
+.weather-forecast-temperature {
+  color: #a9b2a9;
+  margin-top: 10px;
+  font-size: 14px;
+}
+#all-forecast {
+  margin-top: 30px;
 }
