@@ -18,8 +18,7 @@
     <div class="container">
         <div class="header">
             <h1 id="city"></h1>
-            <h3 id="current-date">
-            </h3>
+            <h3 id="current-date"></h3>
             <form id="search-form">
                 <input type="text" placeholder="Search for a city" autocomplete="off" autofocus="on"
                     id="search-text-input" />
@@ -27,27 +26,25 @@
             </form>
         </div>
         <button>My current Location</button>
-        <br></br>
-        <br></br>
-        <br></br>
+       
 
 
         <div class="row">
         <div class="col-6">
             <div class="d-flex align-items-center">
             <img src="" 
-            alt="Clear"
-            id="Icon"
+            alt=""
+            id="icon"
             class="float-left"/>
             <div class="temperature"> 
-                <strong id="temperature"></strong>
+                <strong id="temperature">14</strong>
                 <span class="units">
-                 °C ⎢<a href="#" class="fahrenheit-link">F</a>
+                <a href="#" id="celsius-link" class="active">°C </a> ⎢<a href="#" id="fahrenheit-link" class="inactive">F</a>
                 </span>
             </div>
             </div>
         </div>
-        <div class="col-6">
+        <div class="col-6" id="weather-description">
             <ul>
                 <li>
                     Humidity: <span id="humidity"></span>%</li>

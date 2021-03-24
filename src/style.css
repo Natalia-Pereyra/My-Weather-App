@@ -29,6 +29,7 @@ button {
   font-size: 16px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-bottom: 120px;
 }
 span {
   color: #718373;
@@ -52,7 +53,7 @@ li::first-letter {
   border-radius: 50px;
   max-width: 500px;
   margin-top: 10px;
-  background-image: url(file:///Users/nataliapereyra/Desktop/backgroundimage.png);
+  background-image: url(file:///Users/nataliapereyra/Documents/GitHub/My-Weather-App/Images/backgroundimage.png);
 }
 .row {
   box-sizing: border-box;
@@ -121,11 +122,7 @@ li::first-letter {
   color: #5a6276;
   font-style: bold;
 }
-.fahrenheit-link {
-  color: #ffbe5c;
-  text-decoration: none;
-  font-weight: bolder;
-}
+
 #description-weather {
   color: #ffbe5c;
   font-size: 18px;
@@ -133,3 +130,24 @@ li::first-letter {
   top: -10px;
   left: 5px;
   text-transform: capitalize;
+}
+#weather-description {
+  position: relative;
+  right: -50px;
+}
+.units {
+  margin-left: 100px;
+}
+.temperature .inactive {
+  color: #ffbe5c;
+  text-decoration: none;
+  font-weight: bolder;
+}
+.temperature .active {
+  color: #a9b2a9;
+  text-decoration: none;
+  cursor: default;
+}
+.temperature .active:hover {
+  text-decoration: none;
+}
