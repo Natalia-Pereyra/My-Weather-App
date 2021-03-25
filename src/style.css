@@ -12,6 +12,7 @@ ul li {
 }
 h3 {
   color: #ffbe5c;
+  padding: 0px;
 }
 h5 {
   color: #a9b2a9;
@@ -107,12 +108,13 @@ li::first-letter {
   color: #ffbe5c;
   font-size: 16px;
   position: relative;
-  top: -32px;
+  top: -50px;
 }
-.temperature strong {
+#temperature {
   font-size: 65px;
   color: #a9b2a9;
   font-weight: normal;
+  padding: 0px;
 }
 #my-name {
   color: #ffa826;
@@ -134,10 +136,14 @@ li::first-letter {
 }
 #weather-description {
   position: relative;
-  right: -50px;
+  right: -20px;
+  font-weight: bolder;
+  top: 10px;
 }
 .units {
-  margin-left: 100px;
+  margin-left: 25px;
+  margin-bottom: 70px;
+  padding-top: 0px;
 }
 .temperature .inactive {
   color: #ffbe5c;
@@ -159,4 +165,16 @@ li::first-letter {
 }
 #all-forecast {
   margin-top: 30px;
+}
+#fahrenheit-link {
+  margin-left: 0px;
+}
+#celsius-link {
+  margin-left: 70px;
+}
+#icon {
+  margin-left: -20px;
+}
+#city {
+  margin-bottom: 0px;
 }
