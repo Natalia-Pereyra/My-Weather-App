@@ -61,15 +61,90 @@ function displayForecast(response) {
 
   forecastElement.innerHTML = `
       <div class="col-2">
-                <h5>${formatHours(forecast.dt * 1000)}</h5>
-                <img src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" 
-                />
+                <h6>${formatHours(forecast.dt * 1000)}</h6>
+                <img 
+                 src="http://openweathermap.org/img/wn/${
+          forecast.weather[0].icon
+        }@2x.png"/>
+                <div class="weather-forecast-temperature">
+                <strong>${Math.round(forecast.main.temp_max)}°C </strong>${Math.round(forecast.main.temp_min)}°C
+            </div>
+            </div>
+             `;
+                
+   forecast = response.data.list[1];
+   forecastElement.innerHTML += `
+      <div class="col-2">
+                <h6>${formatHours(forecast.dt * 1000)}</h6>
+                <img 
+                 src="http://openweathermap.org/img/wn/${
+          forecast.weather[0].icon
+        }@2x.png"/>
                 <div class="weather-forecast-temperature">
                 <strong>${Math.round(forecast.main.temp_max)}°C </strong>${Math.round(forecast.main.temp_min)}°C
             </div>
             </div>
             `;
-
+              
+       forecast = response.data.list[2];      
+       forecastElement.innerHTML += `
+      <div class="col-2">
+                <h6>${formatHours(forecast.dt * 1000)}</h6>
+                <img 
+                 src="http://openweathermap.org/img/wn/${
+          forecast.weather[0].icon
+        }@2x.png" />
+                <div class="weather-forecast-temperature">
+                <strong>${Math.round(forecast.main.temp_max)}°C </strong>${Math.round(forecast.main.temp_min)}°C
+            </div>
+            </div>
+            `;  
+              
+      forecast = response.data.list[3];
+      forecastElement.innerHTML += `
+      <div class="col-2">
+                <h6>${formatHours(forecast.dt * 1000)}</h6>
+                <img 
+                 src="http://openweathermap.org/img/wn/${
+          forecast.weather[0].icon
+        }@2x.png"/>
+                <div class="weather-forecast-temperature">
+                <strong>${Math.round(forecast.main.temp_max)}°C </strong>${Math.round(forecast.main.temp_min)}°C
+            </div>
+            </div>
+            `;  
+            
+      forecast = response.data.list[4];
+      forecastElement.innerHTML += `
+      <div class="col-2">
+                <h6>${formatHours(forecast.dt * 1000)}</h6>
+                <img 
+                 src="http://openweathermap.org/img/wn/${
+          forecast.weather[0].icon
+        }@2x.png"/>
+                <div class="weather-forecast-temperature">
+                <strong>${Math.round(forecast.main.temp_max)}°C </strong>${Math.round(forecast.main.temp_min)}°C
+            </div>
+            </div>
+            `;  
+            
+       forecast = response.data.list[5];
+      forecastElement.innerHTML += `
+      <div class="col-2">
+                <h6>${formatHours(forecast.dt * 1000)}</h6>
+                <img 
+                 src="http://openweathermap.org/img/wn/${
+          forecast.weather[0].icon
+        }@2x.png"/>
+                <div class="weather-forecast-temperature">
+                <strong>${Math.round(forecast.main.temp_max)}°C </strong>${Math.round(forecast.main.temp_min)}°C
+            </div>
+            </div>
+            `;         
+              
+                
+                
+      
 }
 
 function search(city) {
@@ -79,11 +154,11 @@ function search(city) {
   let apiUrl = `${api}${city}${apiKey}${units}`;
   axios.get(apiUrl).then(showTemperature);
 
-  apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}${units}`;
+  apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}${apiKey}${units}`;
   axios.get(apiUrl).then(displayForecast);
 
 }
-search("New York");
+
 
 function handleSubmit(event) {
   event.preventDefault();
@@ -120,4 +195,16 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
+search("New York");
 
+function showPosition(position) {
+  let h1 = document.querySelector("h1");
+  h1.innerHTML = 
+}
+
+function getCurrentPosition(){
+navigator.geolocation.getCurrentPosition(showPosition);
+}
+
+let button = document.querySelector("button");
+button.addEventListener("click", getCurrentPosition)

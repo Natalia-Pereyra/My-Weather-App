@@ -14,7 +14,7 @@ h3 {
   color: #ffbe5c;
   padding: 0px;
 }
-h5 {
+h6 {
   color: #a9b2a9;
 }
 
@@ -141,9 +141,8 @@ li::first-letter {
   top: 10px;
 }
 .units {
-  margin-left: 25px;
-  margin-bottom: 70px;
-  padding-top: 0px;
+  margin-top: 70px;
+  margin-left: -60px;
 }
 .temperature .inactive {
   color: #ffbe5c;
@@ -164,7 +163,8 @@ li::first-letter {
   font-size: 14px;
 }
 #all-forecast {
-  margin-top: 30px;
+  margin-top: 10px;
+  margin-bottom: -15px;
 }
 #fahrenheit-link {
   margin-left: 0px;
@@ -174,6 +174,7 @@ li::first-letter {
 }
 #icon {
   margin-left: -20px;
+  padding: 0px;
 }
 #city {
   margin-bottom: 0px;
