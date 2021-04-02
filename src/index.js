@@ -13,7 +13,7 @@ let days = [
 
 let day = days[date.getDay()];
 
-return `${day},  ${formatHours(timestamp)}`;
+return `Local time: ${day} ${formatHours(timestamp)}`;
 }
 
 let now = new Date();
@@ -60,9 +60,10 @@ function displayForecast(response) {
   let forecast = response.data.list[0];
 
   forecastElement.innerHTML = `
-      <div class="col-2">
+      <div class="col-2 text-center">
                 <h6>${formatHours(forecast.dt * 1000)}</h6>
                 <img 
+                 class="w-100"
                  src="http://openweathermap.org/img/wn/${
           forecast.weather[0].icon
         }@2x.png"/>
@@ -74,9 +75,10 @@ function displayForecast(response) {
                 
    forecast = response.data.list[1];
    forecastElement.innerHTML += `
-      <div class="col-2">
+      <div class="col-2 text-center">
                 <h6>${formatHours(forecast.dt * 1000)}</h6>
                 <img 
+                  class="w-100"
                  src="http://openweathermap.org/img/wn/${
           forecast.weather[0].icon
         }@2x.png"/>
@@ -88,9 +90,10 @@ function displayForecast(response) {
               
        forecast = response.data.list[2];      
        forecastElement.innerHTML += `
-      <div class="col-2">
+      <div class="col-2 text-center">
                 <h6>${formatHours(forecast.dt * 1000)}</h6>
                 <img 
+               class="w-100"
                  src="http://openweathermap.org/img/wn/${
           forecast.weather[0].icon
         }@2x.png" />
@@ -102,9 +105,10 @@ function displayForecast(response) {
               
       forecast = response.data.list[3];
       forecastElement.innerHTML += `
-      <div class="col-2">
+      <div class="col-2 text-center">
                 <h6>${formatHours(forecast.dt * 1000)}</h6>
                 <img 
+                class="w-100"
                  src="http://openweathermap.org/img/wn/${
           forecast.weather[0].icon
         }@2x.png"/>
@@ -116,9 +120,10 @@ function displayForecast(response) {
             
       forecast = response.data.list[4];
       forecastElement.innerHTML += `
-      <div class="col-2">
+      <div class="col-2 text-center">
                 <h6>${formatHours(forecast.dt * 1000)}</h6>
                 <img 
+                class="w-100"
                  src="http://openweathermap.org/img/wn/${
           forecast.weather[0].icon
         }@2x.png"/>
@@ -130,9 +135,10 @@ function displayForecast(response) {
             
        forecast = response.data.list[5];
       forecastElement.innerHTML += `
-      <div class="col-2">
+      <div class="col-2 text-center">
                 <h6>${formatHours(forecast.dt * 1000)}</h6>
                 <img 
+                class="w-100"
                  src="http://openweathermap.org/img/wn/${
           forecast.weather[0].icon
         }@2x.png"/>
@@ -199,7 +205,7 @@ search("New York");
 
 function showPosition(position) {
   let h1 = document.querySelector("h1");
-  h1.innerHTML = 
+  h1.innerHTML = getCurrentPosition.value;
 }
 
 function getCurrentPosition(){
