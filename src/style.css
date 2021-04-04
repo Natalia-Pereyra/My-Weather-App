@@ -7,20 +7,23 @@ ul {
 ul li {
   list-style: none;
   text-align: center;
-  color: #a9b2a9;
+  color: #515154;
+  opacity: 0.7;
   font-size: 14px;
 }
 h3 {
-  color: #e8a987;
+  color: #515154;
+  opacity: 0.7;
   padding: 0px;
   font-size: 18px;
 }
 h6 {
-  color: #a9b2a9;
+  color: #515154;
+  opacity: 0.7;
 }
 
 span {
-  color: #718373;
+  color: #515154;
 }
 li::first-letter {
   text-transform: capitalize;
@@ -31,18 +34,19 @@ li::first-letter {
   text-align: center;
   margin-top: 0px;
   padding-bottom: 10px;
-  color: #969191;
+  color: #ec6e4c;
+  opacity: 0.7;
 }
 
 .container {
   display: block;
   margin: 0 auto;
   padding: 30px;
-  border: 3px solid #d1d7d1;
+  border: 1px solid #f1f1f1;
   border-radius: 50px;
   max-width: 500px;
   margin-top: 10px;
-  background-image: url(file:///Users/nataliapereyra/Documents/GitHub/My-Weather-App/Images/backgroundimage.png);
+  background-image: url(file:///Users/nataliapereyra/Documents/GitHub/My-Weather-App/Images/weather%20app%20background.png);
 }
 .row {
   box-sizing: border-box;
@@ -55,19 +59,22 @@ li::first-letter {
 }
 
 .temperature .units {
-  color: #e8a987;
+  color: #ec6e4c;
+  opacity: 0.8;
   font-size: 16px;
   position: relative;
   top: -50px;
 }
 #temperature {
   font-size: 65px;
-  color: #a9b2a9;
+  color: #515154;
+  opacity: 0.7;
   font-weight: normal;
   padding: 0px;
 }
 #my-name {
-  color: #e8a987;
+  color: #ec6e4c;
+  opacity: 0.7;
   font-style: italic;
   margin: 0 auto;
 }
@@ -77,7 +84,8 @@ li::first-letter {
 }
 
 #description-weather {
-  color: #e8a987;
+  color: #ec6e4c;
+  opacity: 0.7;
   font-size: 18px;
   position: relative;
   top: -10px;
@@ -85,6 +93,8 @@ li::first-letter {
   text-transform: capitalize;
 }
 #weather-description {
+  color: #515154;
+  opacity: 0.7;
   position: relative;
   right: -20px;
   font-weight: bolder;
@@ -94,13 +104,15 @@ li::first-letter {
   margin-top: 70px;
   margin-left: -60px;
 }
-.temperature .inactive {
-  color: #e8a987;
+.temperature a {
+  color: #ec6e4c;
+  opacity: 0.7;
   text-decoration: none;
-  font-weight: bolder;
+  font-weight: normal;
 }
 .temperature .active {
-  color: #a9b2a9;
+  color: #515154;
+  opacity: 0.7;
   text-decoration: none;
   cursor: default;
 }
@@ -108,7 +120,8 @@ li::first-letter {
   text-decoration: none;
 }
 .weather-forecast-temperature {
-  color: #a9b2a9;
+  color: #515151;
+  opacity: 0.7;
   margin-top: 10px;
   font-size: 14px;
 }
@@ -137,7 +150,8 @@ li::first-letter {
 }
 #search-button {
   color: white;
-  background-color: #969191;
+  background-color: #515154;
+  opacity: 0.8;
   border: none;
   padding: 3px 20px;
   border-radius: 5px;
