@@ -46,8 +46,9 @@ li::first-letter {
   border-radius: 50px;
   max-width: 500px;
   margin-top: 10px;
-  background-image: url(file:///Users/nataliapereyra/Documents/GitHub/My-Weather-App/Images/weather%20app%20background.png);
+  background-image: url("../Images/weather%20app%20background.png");
 }
+
 .row {
   box-sizing: border-box;
   margin-top: -100px;
