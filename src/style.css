@@ -162,3 +162,9 @@ li::first-letter {
 body {
   background-image: linear-gradient(to bottom right, #1e7883, #a9bdbb, #ee7256);
 }
+@media (max-width: 700px) {
+  body {
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+}
